@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --color-bg: #ffffff;
+    --color-fg: #000;
+    --color-light: #999;
+    --color-primary: #08bd80;
+}
+
+body {
+    width: 100vw;
+    font-size: 18px;
+}
+
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+input,
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body>h1 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Global Footer for Visitors */
+.footer-one {
+    width: 100vw;
+    color: var(--color-fg);
+    background: var(--color-bg);
+    box-shadow: -5px 5px 30px 5px var(--color-light);
+}
+
+.footer-one .footer {
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+
+.footer-one .footer .footer-left {
+    display: flex;
+    width: 49.5%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 1rem 4rem;
+}
+
+.footer-one .footer .footer-left .hero {
+    width: 150px;
+}
+
+.footer-one .footer .footer-left .hero img {
+    width: 100%;
+}
+
+.footer-one .footer .footer-left p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-one .footer .footer-left span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.footer-one .footer .footer-left span svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-one .footer .footer-left span a {
+    color: var(--color-light);
+    font-size: 16px;
+    margin-left: 10px;
+    transition: 0.5s ease;
+}
+
+.footer-one .footer .footer-left span a:hover {
+    color: var(--color-fg);
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.footer-one .footer .footer-left span a b {
+    font-weight: 600;
+}
+
+.footer-one .footer .footer-right {
+    display: flex;
+    width: 49.5%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 4rem 5px 1rem 5px;
+}
+
+.footer-one .footer .footer-right .divs {
+    width: 200px;
+    align-self: stretch;
+}
+
+.footer-one .footer .footer-right .divs h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.footer-one .footer .footer-right .divs .links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-one .footer .footer-right .divs .links a {
+    font-size: 0.9rem;
+    color: var(--color-light);
+    transition: 0.5s ease;
+}
+
+.footer-one .footer .footer-right .divs .links a:hover {
+    color: var(--color-fg);
+    scale: 1.02;
+}
+
+.footer-one .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-one .footer-bottom p {
+    font-size: 0.8rem;
+}
+
+.footer-one .footer-bottom .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-one .footer-bottom .social-links a {
+    color: var(--color-light);
+    transition: 0.5s ease;
+}
+
+.footer-one .footer-bottom .social-links a:hover {
+    color: var(--color-fg);
+    scale: 1.2;
+}
+
+.footer-one .footer-bottom .social-links a svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Query Global Footer for Visitors */
+@media screen and (max-width:870px) {
+    .footer-one .footer {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-one .footer .footer-left,
+    .footer-one .footer .footer-right {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .footer-one .footer-bottom {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+
+
+
+/* Footer Two Css Starts Here */
+.footer-two {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-fg);
+    background: var(--color-bg);
+    box-shadow: -5px 5px 30px 5px var(--color-light);
+}
+
+.footer-two .footer-top {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    background: var(--color-primary);
+}
+
+.footer-two .footer-top a svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--color-bg);
+    transition: 0.5s ease;
+}
+
+.footer-two .footer-top a svg:hover {
+    scale: 1.2;
+}
+
+.footer-two .footer-mid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-two .footer-mid .sections {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 1rem;
+}
+
+.footer-two .footer-mid .sections h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer-two .footer-mid .sections .links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-two .footer-mid .sections .links a {
+    font-size: 0.9rem;
+    color: var(--color-light);
+    transition: 0.5s ease;
+}
+
+.footer-two .footer-mid .sections .links a:hover {
+    color: var(--color-fg);
+    scale: 1.02;
+}
+
+.footer-two .footer-mid .sections:last-child {
+    width: 300px;
+    padding: 5px;
+}
+
+.footer-two .footer-mid .sections:last-child form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.footer-two .footer-mid .sections:last-child form input {
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    padding: 1px 10px;
+    border: 1px solid var(--color-light);
+    border-radius: 50px;
+}
+
+.footer-two .footer-mid .sections:last-child form button {
+    width: 100%;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    font-size: 1.5rem;
+    border: 0;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.footer-two .footer-mid .sections:last-child form button:hover {
+    scale: 0.98;
+}
+
+.footer-two .footer-bottom {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-top: 1px solid var(--color-light);
+}
+
+@media screen and (max-width:550px) {
+    .footer-two .footer-mid .sections {
+        width: 100%;
+    }
+}
+
+
+
+/* Footer Three Css Starts Here */
+.footer-three {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem;
+    color: var(--color-fg);
+    background: var(--color-bg);
+    box-shadow: -5px 5px 30px 5px var(--color-light);
+}
+
+.footer-three .footer-top {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer-three .footer-top .sections {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-three .footer-top .sections h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-three .footer-top .sections .links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-three .footer-top .sections .links a {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: var(--color-light);
+    transition: 0.5s ease;
+}
+
+.footer-three .footer-top .sections .links a::after {
+    display: block;
+    content: '';
+    width: 60%;
+    border-bottom: 2px solid var(--color-light);
+    transform: scaleX(0);
+    transition: transform 500ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.footer-three .footer-top .sections .links a:hover {
+    color: var(--color-fg);
+}
+
+.footer-three .footer-top .sections .links a:hover::after {
+    transform: scaleX(1);
+}
+
+.footer-three .footer-top .sections .social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-three .footer-top .sections .social-links a svg {
+    width: 25px;
+    height: 25px;
+    transition: 0.5s ease;
+}
+
+.footer-three .footer-top .sections .social-links a svg:hover {
+    scale: 1.2;
+    fill: var(--color-primary);
+}
+
+.footer-three .footer-bottom {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    border-top: 1px solid var(--color-light);
+}
+
+@media screen and (max-width:500px) {
+    .footer-three .footer-top .sections {
+        width: 100%;
+    }
+}
